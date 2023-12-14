@@ -752,6 +752,8 @@ variant team_callable::get_value(const std::string& key) const
 		return variant(team_.village_support());
 	} else if(key == "recall_cost") {
 		return variant(team_.recall_cost());
+	} else if(key == "name") {
+		return variant(team_.current_player());
 	} else if(key == "is_human") {
 		return variant(team_.is_local_human());
 	} else if(key == "is_ai") {
